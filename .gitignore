@@ -21,5 +21,6 @@ pids
 
 node_modules
 
-
+.env
+variables.env
 /Users/Bobby/Desktop/DPL/my_projects/sick-fits/backend/node_modules
