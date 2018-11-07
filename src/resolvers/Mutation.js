@@ -26,13 +26,13 @@ const Mutations = {
     }, 
     info
     );
+  },
+  deleteItem(parent, args, ctx, info){
+    const where = { id: args.id};
+    // find the item
+    // 2 check if they own that item or have the permissions
+    //3 delete it
   }
-  // createDog(parent, args, ctx, info) {
-  //   global.dogs = global.dogs || [];
-  //   //create a dog
-  //   const newDog = {name: args.name };
-  //   console.log(args);
-  // }
 };
 
 module.exports = Mutations;
