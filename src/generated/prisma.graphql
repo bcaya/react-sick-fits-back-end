@@ -1,5 +1,5 @@
 # source: https://us1.prisma.sh/bobby-caya-212ffd/bobs-sick-fits/dev
-# timestamp: Sun Nov 11 2018 19:49:58 GMT-0700 (MST)
+# timestamp: Tue Nov 13 2018 18:00:37 GMT-0700 (MST)
 
 type AggregateItem {
   count: Int!
@@ -502,7 +502,7 @@ type User implements Node {
   name: String!
   email: String!
   password: String!
-  resetToken: String!
+  resetToken: String
   resetTokenExpiry: Float
   permissions: [Permission!]!
 }
@@ -521,7 +521,7 @@ input UserCreateInput {
   name: String!
   email: String!
   password: String!
-  resetToken: String!
+  resetToken: String
   resetTokenExpiry: Float
   permissions: UserCreatepermissionsInput
 }
@@ -563,7 +563,7 @@ type UserPreviousValues {
   name: String!
   email: String!
   password: String!
-  resetToken: String!
+  resetToken: String
   resetTokenExpiry: Float
   permissions: [Permission!]!
 }
