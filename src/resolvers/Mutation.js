@@ -85,6 +85,12 @@ const Mutations = {
     ctx.response.clearCookie('token')
     return {message: 'Goodbye!'};
   }
+,
+  requestReset(parent, args, ctx, info){
+    //1. Check if this is is a real user
+    //2. Set a reset token and expiry on that user
+    //3. email them that reset token
+  }
 };
 
 module.exports = Mutations;
