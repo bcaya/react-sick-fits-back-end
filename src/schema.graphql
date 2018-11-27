@@ -23,8 +23,8 @@ type Query {
 }
 
 type User{
-  id: ID! @unique
+  id: ID!
   name: String!
-  email: String! @unique
+  email: String!
   permissions: [Permission]
 }
